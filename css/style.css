@@ -91,8 +91,8 @@ nav a:hover{
 
 
 /* Requirement 4 code here*/
-*:focus{
-  border: 8px solid #ff0000;
+:focus{
+  border: 8px solid;
 }
 
 
@@ -100,6 +100,7 @@ nav a:hover{
 .container{
   /* Requirement 5 code here*/
   display: grid;
+  object-fit: cover;
   grid-template-columns: 1fr 5fr 1fr;
   grid-template-rows: repeat(5, auto);
   grid-row-gap: 15px;
@@ -193,11 +194,12 @@ header{
     padding: 30px 0;
 
     /* Your code here */
-
+    text-align: right;
   }
 
   .container{
     display: grid;
+    object-fit: cover;
     grid-template-columns: 50px auto 500px auto 50px;
     grid-template-rows: repeat(5, 400px);
   }
@@ -205,35 +207,37 @@ header{
   
 
   .about-image{
-  
+    grid-column: 2 / span 2;
   }
 
   .about{
-    
+    grid-column: 3 / span 2;
   }
 
   .method-image{
-    
+    grid-column: 3 / span 2;
   }
 
   .method{
-   
+    grid-column: 2 / span 2;
   }
 
+
   .clients-image{
-    
+    grid-column: 2 / span 2;
   }
 
   .clients{
-    
+    grid-column: 3 / span 2;
   }
 
   .contact-image{
-    
+    grid-column: 3 / span 2;
   }
+  
 
   .contact{
-    
+    grid-column: 2 / span 2;
   }
 
 }
