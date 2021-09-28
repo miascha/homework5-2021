@@ -91,8 +91,8 @@ nav a:hover{
 
 
 /* Requirement 4 code here*/
-:focus{
-  border: 8px solid;
+*:focus{
+  border: 2px solid;
 }
 
 
@@ -175,6 +175,7 @@ header{
   grid-column: 1 / -1;
   grid-row: 5 / span 1;
   max-height: 700px;
+  overflow: hidden;
 }
 
 
@@ -199,7 +200,6 @@ header{
 
   .container{
     display: grid;
-    object-fit: cover;
     grid-template-columns: 50px auto 500px auto 50px;
     grid-template-rows: repeat(5, 400px);
   }
