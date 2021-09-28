@@ -78,15 +78,18 @@ nav a:hover{
   z-index: 1;
 
   /* Requirement 3a code here*/
-  position: absolute;
+  /* position: absolute;
   bottom: 40px;
-  visibility: hidden;
+  visibility: hidden; */
+  position: relative;
+  top: -40px;
 }
 
 /* Requirement 3b code here*/
 .skip a:focus{
   /* need to figure out how to position it even with the top of it's parent */
-  visibility: visible;
+  /* visibility: visible; */
+  top: 0;
 }
 
 
@@ -186,7 +189,7 @@ header{
   margin: auto;
 
   /* Your code here */
-  align-self: start;
+  align-self: center;
 
 }
 
